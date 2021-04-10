@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <img src="https://i.imgur.com/wrZbXJX.png" alt="Site Logo" >
+        <img src="img/logo.png" alt="Site Logo" id="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -38,7 +38,7 @@
             <a href="about.html#skills">Skill Sets</a>
         </div>
 
-        <div>
+        <div class="project-overview">
             <h2>Coffee Community App</h2>
             <picture>
                 <source srcset="img/home/cc_cover@1x.jpg" media="(max-width:767px)">
@@ -49,11 +49,11 @@
             <a href="coffee.html" class="button">Read more</a>
         </div>
 
-        <div>
+        <div class="project-overview">
             <h2>FITTED. App</h2>
             <picture>
                 <source srcset="img/home/fitted_cover@1x.jpg" media="(max-width:767px)">
-                <img src="img/home/fitted_cover@2x.jpg" alt="fitted app" width="75%" height="75%">
+                <img src="img/home/fitted_cover@2x.jpg" alt="fitted app">
             </picture>
 
             <p>UI Case Study - A web responsive app for users who are new or returning to fitness to establish a daily exercise routine consistently via different electronic devices.</p>
@@ -80,7 +80,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="social-icons">
             <!--Social Media Layout and Placeholders-->
             <a href="http://www.behance.com/sandyng" target="_blank">
                 <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwYXRoIGQ9Ik0xNDMuMzQ5LDM1Ni44NzdjNi44MjMsMCAxMy4zMTksLTAuNjA2IDE5LjQyNywtMS45NzVjNi4yMDQsLTEuMzQ1IDExLjY5NCwtMy41MDMgMTYuMzQ4LC02LjY3OGM0LjYyOSwtMy4wNTQgOC40ODMsLTcuMjQ3IDExLjI3LC0xMi41NTVjMi44LC01LjI4MyA0LjE0NSwtMTIuMTQzIDQuMTQ1LC0yMC40MmMwLC0xNi4yMjcgLTQuNTgxLC0yNy43NjQgLTEzLjY1OCwtMzQuNzU2Yy05LjExMywtNi45MDggLTIxLjI0NCwtMTAuMzM3IC0zNi4xNjIsLTEwLjMzN2wtNzUuMzkxLDBsMCw4Ni43MjFsNzQuMDIxLDBabS0zLjg0MSwtMTM0LjA1N2MxMi4yNzYsMCAyMi40NTYsLTIuOTA5IDMwLjUxNSwtOC44MjNjNy45NzQsLTUuODI5IDExLjgyNywtMTUuNDM5IDExLjgyNywtMjguNjQ4YzAsLTcuMzIgLTEuMjcyLC0xMy4zNzkgLTMuODUzLC0xOC4wODFjLTIuNjc5LC00LjcwMiAtNi4yMjksLTguMzc0IC0xMC42ODksLTEwLjk1NmMtNC40MzUsLTIuNjc4IC05LjQ1MywtNC41MiAtMTUuMjU3LC01LjUyNmMtNS43MjEsLTEuMTE1IC0xMS42OTUsLTEuNTUxIC0xNy44MzksLTEuNTUxbC02NC44ODQsMGwwLDczLjU4NWw3MC4xOCwwWm04Ljk2OCwtMTI3LjIzNWMxNS4wNjMsMCAyOC42NiwxLjI5NyA0MS4wODIsNGMxMi4zNjEsMi42MTcgMjIuODkyLDYuOTkyIDMxLjgxMiwxMi45OTFjOC43NzQsNS45OTkgMTUuNjQ1LDEzLjk3MyAyMC41NjUsMjQuMDE5YzQuNzg3LDkuOTAxIDcuMTk5LDIyLjI5OSA3LjE5OSwzNi45NWMwLDE1Ljg1MSAtMy41ODgsMjkuMDk3IC0xMC43OTgsMzkuNjg5Yy03LjI0NywxMC41NjcgLTE3LjksMTkuMjMyIC0zMi4xMTUsMjUuOTdjMTkuMzU0LDUuNTc1IDMzLjcyNywxNS4zNzkgNDMuMjQsMjkuMzI4YzkuNTYyLDE0LjA0NSAxNC4yNTEsMzAuODQyIDE0LjI1MSw1MC41NDdjMCwxNS45NzIgLTMuMDUzLDI5LjcxNSAtOS4xNzMsNDEuMjg4Yy02LjE2OSwxMS43MDcgLTE0LjU2NywyMS4xOTYgLTI0LjkxNywyOC41MTZjLTEwLjQzNCw3LjM4IC0yMi4zOTUsMTIuODA5IC0zNS44MjIsMTYuMzM2Yy0xMy4yNywzLjUxNCAtMjcuMDQ5LDUuMjk2IC00MS4xOCw1LjI5NmwtMTUyLjYyMywwbDAsLTMxNC45M2wxNDguNDc5LDBaIiBzdHlsZT0iZmlsbDojMDMwNDA0O2ZpbGwtcnVsZTpub256ZXJvOyIvPjxwYXRoIGQ9Ik00MzQuNTE0LDIzNi4wMTdjLTcuNDUzLC04LjIyOSAtMjAuMDQ1LC0xMi42ODggLTM1LjQyMywtMTIuNjg4Yy0xMC4wMSwwIC0xOC4yODcsMS42ODQgLTI0LjkyOSw1LjExNGMtNi40OTUsMy4zOTMgLTExLjgwMyw3LjU5OCAtMTUuODYzLDEyLjU2N2MtNC4wNDgsNS4wNDEgLTYuNzg2LDEwLjM3NCAtOC4zOTgsMTYuMDY5Yy0xLjYsNS41NTEgLTIuNTY5LDEwLjU4IC0yLjg0OCwxNS4wMjhsMTAxLjg5NCwwYy0xLjQ5LC0xNS45NzMgLTYuOTU2LC0yNy43ODkgLTE0LjQzMywtMzYuMDlabS03MS45NzMsMTE5LjgxOGM5LjM5Miw5LjE2MiAyMi45NTIsMTMuNzY3IDQwLjUyNSwxMy43NjdjMTIuNjI3LDAgMjMuNTM0LC0zLjE4NyAzMi42OTYsLTkuNTYyYzkuMDc3LC02LjM2MiAxNC42MDMsLTEzLjE2MSAxNi43MzYsLTIwLjIxNGw1NS4xNjQsMGMtOC44NzEsMjcuNDQ5IC0yMi4zMSw0Ny4wNDUgLTQwLjY3LDU4Ljg0OWMtMTguMTQyLDExLjg0IC00MC4yNDYsMTcuNzQxIC02Ni4wMjMsMTcuNzQxYy0xNy45NiwwIC0zNC4xMjYsLTIuOTA4IC00OC42NDQsLTguNjI4Yy0xNC41MDcsLTUuODA1IC0yNi42MjUsLTEzLjkyNSAtMzYuODI5LC0yNC41MjhjLTkuOTM4LC0xMC42NDEgLTE3LjY1NywtMjMuMjIgLTIzLjE1OSwtMzcuOTkzYy01LjQ0MSwtMTQuNyAtOC4xOCwtMzAuOTc1IC04LjE4LC00OC42MDhjMCwtMTcuMDUxIDIuODQ4LC0zMi45NzUgOC40MjIsLTQ3LjY5OWM1LjY3MiwtMTQuNzczIDEzLjU0OSwtMjcuNTIyIDIzLjg4NiwtMzguMjFjMTAuMzYyLC0xMC43NSAyMi42MzgsLTE5LjIzMyAzNi45MzgsLTI1LjQzOGMxNC4zMTIsLTYuMTY4IDMwLjA5MSwtOS4yNyA0Ny41NjYsLTkuMjdjMTkuMjkzLDAgMzYuMTc0LDMuNzA4IDUwLjY2OCwxMS4yN2MxNC40MjIsNy40NjUgMjYuMjYyLDE3LjU3MiAzNS41NTcsMzAuMjI0YzkuMjgzLDEyLjYyOCAxNS45MTIsMjcuMDczIDIwLjA0NCw0My4yNzZjNC4wOTYsMTYuMTc4IDUuNTM4LDMzLjA3MiA0LjM2Myw1MC43NjVsLTE2NC41NDgsMGMwLDE4LjAzMyA2LjA4NCwzNS4wOTYgMTUuNDg4LDQ0LjI1OFoiIHN0eWxlPSJmaWxsOiMwMzA0MDQ7ZmlsbC1ydWxlOm5vbnplcm87Ii8+PHJlY3QgaGVpZ2h0PSIzMS4wNzIiIHN0eWxlPSJmaWxsOiMwMzA0MDQ7IiB3aWR0aD0iMTI3LjY1OSIgeD0iMzM0LjIzMSIgeT0iMTE2LjcyIi8+PC9nPjwvc3ZnPg==">
