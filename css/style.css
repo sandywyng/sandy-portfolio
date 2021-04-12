@@ -116,13 +116,21 @@ button:active {
   font-weight: 700;
 }
 
+.container {
+  padding: 0 15px;
+}
 
 #logo {
   max-width: 200px;
 }
 
-.project-overview img{
+#project img{
   max-width: 1200px;
+}
+
+#project.row{
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; 
 }
 
 main {
