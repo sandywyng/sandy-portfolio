@@ -3,8 +3,8 @@ header {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  text-align: left;
-  padding: 10px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 body {
@@ -21,11 +21,9 @@ body {
 
 #hero {
   background-color: #ffe4c4;
-}
-
-#hero h1 {
-  margin: 0;
-  padding: 0.67em 0;
+  padding: 20px 0; 
+  display: inline-block;
+  width: 100%;
 }
 
 h1,
