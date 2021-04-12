@@ -1,15 +1,19 @@
 header {
-  color: lightseagreen;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
 }
+
 body {
   background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
@@ -20,6 +24,7 @@ h4 {
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.4;
 }
+
 h1 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 2.5em;
@@ -37,28 +42,33 @@ h3 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 h4 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1em;
   font-weight: 400;
 }
+
 nav {
   text-transform: uppercase;
   font-weight: 400;
 }
 
-nav > ul {
+nav>ul {
   display: flex;
 }
 
-nav > ul > li {
+nav>ul>li {
   padding: 0 10px;
 }
 
 ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
 }
 
 img {
@@ -67,36 +77,48 @@ img {
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:visited {
   /* visited link */
   color: #ff7f50;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
+
 a:active {
-  color: #994c30; /* selected link */
+  color: #994c30;
+  /* selected link */
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #f0c7b8;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #b95936; /* width of the border, type, color */
+  border-bottom: 2px solid #b95936;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover,
 .button:focus {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 button:active {
   color: #994c30;
 }
@@ -107,6 +129,7 @@ button:active {
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.contact:hover .button.contact:focus {
   background-color: #ff7f50;
   color: #ffffff;
@@ -124,13 +147,15 @@ button:active {
   max-width: 200px;
 }
 
-#project img{
+#project img {
   max-width: 1200px;
 }
 
-#project.row{
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; 
+#project.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 main {
