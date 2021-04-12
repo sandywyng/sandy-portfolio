@@ -21,7 +21,7 @@ body {
 }
 
 #hero {
-  background-color: #ffffff;
+  background-color: #ffe4c4;
   padding: 20px 0; 
   display: inline-block;
   width: 100%;
@@ -75,7 +75,6 @@ nav>ul>li {
 nav > ul > li > a:visited {
   color: #ff7f50;
   font-weight: 700;
-
 }
 
 ul {
