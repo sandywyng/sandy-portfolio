@@ -1,10 +1,11 @@
 header {
-  background-color: #ffe4c4;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   text-align: center;
   padding: 20px 0;
+  width: 100%;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #ffffff;
   padding: 20px 0; 
   display: inline-block;
   width: 100%;
@@ -74,6 +75,7 @@ nav>ul>li {
 nav > ul > li > a:visited {
   color: #ff7f50;
   font-weight: 700;
+
 }
 
 ul {
@@ -166,6 +168,7 @@ button:active {
 
 #project img {
   max-width: 1200px;
+  box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
 }
 
 #project .row {
