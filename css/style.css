@@ -1,8 +1,10 @@
 header {
-  color: #ffffff;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
+  text-align: left;
+  padding: 10px 0;
 }
 
 body {
@@ -62,9 +64,9 @@ nav>ul>li {
   padding: 10px 10px;
 }
 
-#hero h1 {
-  text-align: center; 
-  /* Centers text */
+nav > ul > li > a:visited {
+  color: #ff7f50;
+  font-weight: 700;
 }
 
 ul {
@@ -152,6 +154,7 @@ button:active {
 
 #logo {
   max-width: 200px;
+  text-align: center; 
 }
 
 #project img {
