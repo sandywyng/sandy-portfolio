@@ -137,6 +137,8 @@ button:active {
 
 #copyright {
   font-weight: 700;
+  font-size: .75em;
+  text-align: left;
 }
 
 .container {
