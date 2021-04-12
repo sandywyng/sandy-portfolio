@@ -1,5 +1,5 @@
 header {
-  background-color: #ffffff;
+  background-color: #ffe4c4;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -17,6 +17,15 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+}
+
+#hero {
+  background-color: #ffe4c4;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
 }
 
 h1,
