@@ -125,6 +125,8 @@ a:active {
   border-bottom: 2px solid #b95936;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover,
