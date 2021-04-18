@@ -188,6 +188,11 @@ button:active {
   color: #ffffff;
 }
 
+#resume.button {
+ display: inline-block;
+ text-align: center; 
+}
+
 #copyright {
   font-weight: 700;
   font-size: .75em;
@@ -303,7 +308,6 @@ Large devices (1024px or larger)
       clear: both;
       display: table;
     }
-  
 
 }
 
