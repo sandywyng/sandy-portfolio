@@ -264,6 +264,10 @@ Medium devices (640px and larger)
     width: 50%;
 
   }
+​
+  .col-md-3 {
+    width: 25%;
+  }
 
   .row:after {
     content: "";
@@ -298,10 +302,15 @@ Large devices (1024px or larger)
     [class*="col-"] {
       float: left;
     }
-  
+
+    .col-lg-3 {
+      width: 25%;
+    }
+
     .col-lg-7 {
       width: 60%;
     }
+
   
     .row:after {
       content: "";
@@ -315,4 +324,9 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.content-holder {
+  padding-left: 20px;;
 }
