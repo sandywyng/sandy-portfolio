@@ -13,6 +13,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--cdn links-->
+   <script src="https://kit.fontawesome.com/e6aa32bfe8.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -21,7 +23,9 @@
 <body>
     <!-- header section -->
     <header>
+        
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle"></div>
             <img src="img/logo.png" alt="Site Logo" id="logo">
             <nav>
                 <ul id=header>
@@ -29,8 +33,10 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Project</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="menuicon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+        </div>
         </div>
     </header>
 
@@ -1185,6 +1191,7 @@
                 <a href="mailto:sandywyng@gmail.com?subject=UX Design Inquiry&body=Please state your question here. "
                     class="button contact">sandywyng[at]gmail.com </a>
             </p>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </div>
 
         <div class="social-icons">
