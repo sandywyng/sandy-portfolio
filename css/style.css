@@ -30,10 +30,6 @@ nav>ul {
   position: relative;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
 .navtoggle li .menuicon {
   position: absolute;
   padding-right: 0;
@@ -41,19 +37,35 @@ nav>ul {
   font-size: 20px;
 }
 
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  text-align: right; 
+  padding: 10px 0;
+  border-top: 1px solid #ff7f50;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0;
+}
 
 nav > ul > li > a:visited {
   color: #ff7f50;
   font-weight: 700;
 }
 
-ul {
-  list-style-type: none;
-  /* Remove bullets */
-  padding: 0;
-  /* Remove padding */
-  margin: 0;
-  /* Remove margins */
+.container {
+  padding: 0 100px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.content-holder {
+  padding-left: 20px;
 }
 
 img {
@@ -227,6 +239,7 @@ button:active {
 }
 
 #logo {
+  display: inline-block; 
   max-width: 150px;
   text-align: center; 
 }
@@ -286,6 +299,14 @@ Medium devices (640px and larger)
     margin-top: 10px;
   }
 
+  main {
+    padding-top: 80px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
   #hero {
     text-align: center;
   }
@@ -326,6 +347,7 @@ Large devices (1024px or larger)
   header {
     text-align: unset;
     padding: 20px 0 26px;
+  }
 
 
     .navtoggle li:last-child {
@@ -340,7 +362,7 @@ Large devices (1024px or larger)
       display: block;
     }
   
-    [class*="col-"] {
+    [class*="col-lg-"] {
       float: left;
     }
 
@@ -359,16 +381,11 @@ Large devices (1024px or larger)
       display: table;
     }
 
+    .container {
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
 }
 
-.container {
-  padding: 0 100px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.content-holder {
-  padding-left: 20px;
-}
