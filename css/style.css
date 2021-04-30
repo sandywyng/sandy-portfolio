@@ -245,7 +245,7 @@ button:active {
 }
 
 #project img {
-  max-width: 1200px;
+  max-width: 1400px;
   box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
 }
 
@@ -374,6 +374,9 @@ Large devices (1024px or larger)
       width: 60%;
     }
 
+    #project img{
+      max-width: 1400px;
+    }
   
     .row:after {
       content: "";
