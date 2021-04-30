@@ -1,10 +1,62 @@
 header {
   background-color: #ffffff;
-  display: flex;
+  display: inline-block;
+  position: fixed; 
   justify-content: space-between;
   max-width: 1200px;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0 4px;
+  margin: 0 auto; 
+  width: 100%;
+}
+
+nav {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+nav>ul {
+  display: flex; 
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle {
+  position: relative;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .menuicon {
+  position: absolute;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+
+nav > ul > li > a:visited {
+  color: #ff7f50;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
+}
+
+img {
   width: 100%;
 }
 
@@ -59,41 +111,7 @@ h4 {
   font-weight: 400;
 }
 
-nav {
-  text-transform: uppercase;
-  font-weight: 400;
-}
 
-nav>ul {
-  display: flex;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle {
-  position: relative;
-}
-
-
-nav > ul > li > a:visited {
-  color: #ff7f50;
-  font-weight: 700;
-}
-
-ul {
-  list-style-type: none;
-  /* Remove bullets */
-  padding: 0;
-  /* Remove padding */
-  margin: 0;
-  /* Remove margins */
-}
-
-img {
-  width: 100%;
-}
 
 picture{
   width: 100%;
@@ -205,7 +223,7 @@ button:active {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 #logo {
@@ -227,6 +245,7 @@ button:active {
 
 main {
   max-width: 1200px;
+  padding-top: 80px;
   margin: 0 auto;
 }
 
@@ -245,7 +264,7 @@ Medium devices (640px and larger)
 
   nav>ul>li {
     padding: 10px 10px;
-    display: flex; 
+    display: inline-block; 
   }
 
   .navtoggle li:not(:last-child) {
@@ -308,11 +327,6 @@ Large devices (1024px or larger)
     text-align: unset;
     padding: 20px 0 26px;
 
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 20px;
-    }
 
     .navtoggle li:last-child {
       display: none;
@@ -348,6 +362,7 @@ Large devices (1024px or larger)
 }
 
 .container {
+  padding: 0 100px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -355,5 +370,5 @@ Large devices (1024px or larger)
 
 
 .content-holder {
-  padding-left: 20px;;
+  padding-left: 20px;
 }
