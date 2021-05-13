@@ -2,7 +2,7 @@ header {
   background-color: #ffffff;
   display: inline-block;
   position: fixed; 
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   text-align: center;
   padding: 10px 0 4px;
@@ -245,7 +245,7 @@ button:active {
 }
 
 #project img {
-  max-width: 1400px;
+  max-width: 1200px;
   box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
 }
 
@@ -375,7 +375,7 @@ Large devices (1024px or larger)
     }
 
     #project img{
-      max-width: 1400px;
+      max-width: 1200px;
     }
   
     .row:after {
@@ -385,7 +385,7 @@ Large devices (1024px or larger)
     }
 
     .container {
-      max-width: 1400px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
