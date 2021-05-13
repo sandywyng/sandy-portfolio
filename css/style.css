@@ -15,7 +15,7 @@ nav {
   font-weight: 400;
 }
 
-nav>ul {
+nav > ul {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -52,7 +52,7 @@ nav>ul {
   padding: 0;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   color: #ff7f50;
   font-weight: 700;
 }
@@ -270,12 +270,25 @@ button:active {
   text-align: center;
 }
 
-#project img {
+#project-1 img {
   max-width: 1200px;
   box-shadow: 4px 4px 20px 0 rgba(50, 50, 50, 0.5);
 }
 
-#project .row {
+#project-1 .row {
+  margin: 25px 0;
+
+  /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px;
+  border-bottom: 2px solid #ff7f50;
+}
+
+#project-2 img {
+  max-width: 1200px;
+  box-shadow: 4px 4px 20px 0 rgba(50, 50, 50, 0.5);
+}
+
+#project-2 .row {
   margin: 25px 0;
 
   /* 25px top and bottom, 0 left and right */
@@ -301,7 +314,7 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
-  nav>ul>li {
+  nav > ul > li {
     padding: 10px;
     display: inline-block;
   }
@@ -345,16 +358,20 @@ Medium devices (640px and larger)
     float: left;
   }
 
+  .col-md-3 {
+    width: 25%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
 
-  #project img {
+  #project-1 img {
     max-width: 300px;
   }
 
-  ​ .col-md-3 {
-    width: 25%;
+  #project-2 img {
+    max-width: 300px;
   }
 
   .row::after {
@@ -397,7 +414,7 @@ Large devices (1024px or larger)
     width: 60%;
   }
 
-  #project img {
+  #project-1 img {
     max-width: 1200px;
   }
 
