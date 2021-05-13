@@ -1,12 +1,12 @@
 header {
-  background-color: #ffffff;
+  background-color: #fff;
   display: inline-block;
-  position: fixed; 
+  position: fixed;
   justify-content: center;
   max-width: 1200px;
   text-align: center;
   padding: 10px 0 4px;
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -16,9 +16,9 @@ nav {
 }
 
 nav>ul {
-  display: flex; 
+  display: flex;
   list-style-type: none;
-  padding: 0; 
+  padding: 0;
   margin: 0;
 }
 
@@ -40,18 +40,19 @@ nav>ul {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
-  text-align: right; 
+  text-align: right;
   padding: 10px 0;
   border-top: 1px solid #ff7f50;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #ff7f50;
   font-weight: 700;
 }
@@ -63,7 +64,6 @@ nav > ul > li > a:visited {
   margin-right: auto;
 }
 
-
 .content-holder {
   padding-left: 20px;
 }
@@ -73,20 +73,23 @@ img {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   font-weight: 300;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
 #hero {
   background-color: #ffe4c4;
-  padding: 20px 0; 
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -123,18 +126,24 @@ h4 {
   font-weight: 400;
 }
 
-
-
-picture{
+picture {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -146,8 +155,13 @@ picture{
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -155,8 +169,13 @@ picture{
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
@@ -166,6 +185,7 @@ picture{
 a {
   color: #ff7f50;
   text-decoration: none;
+
   /* No underlining */
 }
 
@@ -178,24 +198,29 @@ a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
+
   /* Underlining when hovering over a link */
 }
 
 a:active {
   color: #994c30;
+
   /* selected link */
 }
 
 .button {
   display: inline-block;
+
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #f0c7b8;
-  color: #ffffff;
+  color: #fff;
+
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #b95936;
+
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -203,6 +228,7 @@ a:active {
 .button:hover,
 .button:focus {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -220,17 +246,17 @@ button:active {
 
 .button.contact:hover .button.contact:focus {
   background-color: #ff7f50;
-  color: #ffffff;
+  color: #fff;
 }
 
 #resume.button {
- display: inline-block;
- text-align: center; 
+  display: inline-block;
+  text-align: center;
 }
 
 #copyright {
   font-weight: 700;
-  font-size: .75em;
+  font-size: 0.75em;
   text-align: left;
 }
 
@@ -239,18 +265,19 @@ button:active {
 }
 
 #logo {
-  display: inline-block; 
+  display: inline-block;
   max-width: 150px;
-  text-align: center; 
+  text-align: center;
 }
 
 #project img {
   max-width: 1200px;
-  box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 4px 4px 20px 0 rgba(50, 50, 50, 0.5);
 }
 
 #project .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
   padding-bottom: 25px;
   border-bottom: 2px solid #ff7f50;
@@ -274,10 +301,9 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
-
   nav>ul>li {
-    padding: 10px 10px;
-    display: inline-block; 
+    padding: 10px;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
@@ -287,7 +313,7 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  
+
   header {
     text-align: unset;
     padding: 10px 0 13px;
@@ -321,23 +347,21 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-
   }
 
-  #project img{
+  #project img {
     max-width: 300px;
   }
-​
-  .col-md-3 {
+
+  ​ .col-md-3 {
     width: 25%;
   }
 
-  .row:after {
+  .row::after {
     content: "";
     clear: both;
     display: table;
   }
-
 }
 
 /* ==============================
@@ -349,46 +373,43 @@ Large devices (1024px or larger)
     padding: 20px 0 26px;
   }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-    .navtoggle li:last-child {
-      display: none;
-    }
+  #hero {
+    text-align: center;
+  }
 
-    #hero {
-      text-align: center;
-    }
-  
-    #hero span {
-      display: block;
-    }
-  
-    [class*="col-lg-"] {
-      float: left;
-    }
+  #hero span {
+    display: block;
+  }
 
-    .col-lg-3 {
-      width: 25%;
-    }
+  [class*="col-lg-"] {
+    float: left;
+  }
 
-    .col-lg-7 {
-      width: 60%;
-    }
+  .col-lg-3 {
+    width: 25%;
+  }
 
-    #project img{
-      max-width: 1200px;
-    }
-  
-    .row:after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+  .col-lg-7 {
+    width: 60%;
+  }
 
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #project img {
+    max-width: 1200px;
+  }
 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
