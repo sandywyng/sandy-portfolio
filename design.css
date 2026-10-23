@@ -38,3 +38,9 @@
 /* Alternate section bands; preserve content width and existing focus outlines. */
 #work,#about{position:relative;isolation:isolate;background:#f0edf5;--section-background:#f0edf5}
 #work::before,#about::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--section-background);box-shadow:0 0 0 100vmax var(--section-background);clip-path:inset(0 -100vmax)}
+
+/* Content-sized support tags beneath a separate label. */
+.scope{display:flex;flex-wrap:wrap;align-items:flex-start;gap:12px}
+.scope .scope-label{flex-basis:100%;margin-bottom:4px}
+.scope span:not(.scope-label){display:block;flex:0 1 auto;max-width:100%;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+.scope span:not(.scope-label)::before{content:none}
