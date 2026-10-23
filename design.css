@@ -62,3 +62,9 @@
     :is(#services,#work) .section-head>p{grid-column:2;grid-row:2;margin:0}
   }
 }
+
+/* Visible, indented deliverable lists for quick scanning. */
+#services .service-output ul{list-style:disc outside;padding:0 0 0 1.3em;margin:16px 0 0}
+#services .service-output li{display:list-item;padding:3px 0 3px 4px;margin:0 0 8px;border:0}
+#services .service-output li::marker{color:var(--ink)}
+#services .service-output li:last-child{margin-bottom:0}
