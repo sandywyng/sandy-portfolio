@@ -34,3 +34,7 @@
 @media(max-width:700px){.proof-paths,.format-grid{grid-template-columns:1fr}.proof-paths a{padding:18px}.intro h1{font-size:min(var(--hero-size),11.6cqw)}}
 
 .manager-feedback{margin-top:34px;padding:25px;background:var(--purple);border-radius:var(--curve);max-width:460px}.manager-feedback .eyebrow{font-size:12px;line-height:1.7;display:block;color:var(--purple-dark)}.manager-feedback blockquote{margin:18px 0}.manager-feedback blockquote p{font:25px/1.5 Georgia,serif;margin:0}.manager-feedback .feedback-source{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:16px}.manager-feedback .feedback-context{font-size:16px;line-height:1.7;margin:0}.qa-project .project-visual{justify-content:flex-start}.qa-project .stat-row{margin:20px 0}.qa-project .stat strong{font-size:60px}.qa-project .evidence-table{min-width:380px}.format-grid .text-link{margin-bottom:10px}
+
+/* Alternate section bands; preserve content width and existing focus outlines. */
+#work,#about{position:relative;isolation:isolate;background:#f0edf5;--section-background:#f0edf5}
+#work::before,#about::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--section-background);box-shadow:0 0 0 100vmax var(--section-background);clip-path:inset(0 -100vmax)}
