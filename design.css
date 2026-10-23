@@ -50,3 +50,15 @@
 #work .proof-paths a:hover{background:#fff;border-color:var(--purple-dark)}
 #about .manager-feedback,#about .toolbox span{background:#fff}
 #about .career-summary{background:#fff;border:1px solid var(--line);border-radius:var(--curve);padding:24px}
+
+/* Align the Services introduction with the service grid below. */
+#services .section-head>p{width:100%;max-width:65ch}
+@media(min-width:701px){
+  @container page (min-width:721px){
+    #services .section-head{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--grid-gap);row-gap:12px;align-items:start}
+    #services .section-head>div{display:contents}
+    #services .section-head .eyebrow{grid-column:1;grid-row:1}
+    #services .section-head h2{grid-column:1;grid-row:2;margin:0}
+    #services .section-head>p{grid-column:2;grid-row:2;margin:0}
+  }
+}
